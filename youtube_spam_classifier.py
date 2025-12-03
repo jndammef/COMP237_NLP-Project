@@ -87,10 +87,7 @@ for i, comment in enumerate(df[df['CLASS']==1]['CONTENT'].head(2).values, 1):
 
 print(f"\n{GREEN}Step 1 Complete!{RESET}")
 
-# ============================================================================
 # STEP 2: Apply CountVectorizer (Bag of Words)
-# ============================================================================
-
 print(f"\n{GREEN}STEP 2: Apply CountVectorizer - Bag of Words Model{RESET}\n")
 
 # Extract the two columns needed
@@ -124,10 +121,7 @@ print(f"\n{GREEN}Total vocabulary size:{RESET} {len(feature_names)} unique words
 
 print(f"\n{GREEN}Step 2 Complete!{RESET}")
 
-# ============================================================================
 # STEP 3: Apply TF-IDF Transformation
-# ============================================================================
-
 print(f"\n{GREEN}STEP 3: Apply TF-IDF Transformation (Downscaling){RESET}\n")
 
 # Initialize TF-IDF Transformer
@@ -161,10 +155,7 @@ for idx in top_indices:
 
 print(f"\n{GREEN}Step 3 Complete!{RESET}")
 
-# ============================================================================
 # STEP 4: Shuffle and Split Dataset (75% Train, 25% Test)
-# ============================================================================
-
 print(f"\n{GREEN}STEP 4: Shuffle and Split Dataset{RESET}\n")
 
 # Shuffle the dataset using pandas.sample with frac=1
@@ -204,10 +195,7 @@ print(f"Class distribution in testing: {y_test.value_counts().to_dict()}")
 
 print(f"\n{GREEN}Step 4 Complete!{RESET}")
 
-# ============================================================================
 # STEP 5: Train Naive Bayes Classifier
-# ============================================================================
-
 print(f"\n{GREEN}STEP 5: Train Naive Bayes Classifier{RESET}\n")
 
 # Initialize the Naive Bayes classifier (MultinomialNB for text)
@@ -229,10 +217,7 @@ print(f"Classes: {classifier.classes_}")
 
 print(f"\n{GREEN}Step 5 Complete!{RESET}")
 
-# ============================================================================
 # STEP 6: Cross-Validate Model (5-Fold)
-# ============================================================================
-
 print(f"\n{GREEN}STEP 6: Cross-Validate Model on Training Data{RESET}\n")
 
 # Perform 5-fold cross-validation on training data
@@ -248,10 +233,7 @@ print(f"Max Accuracy: {cv_scores.max() * 100:.2f}%")
 
 print(f"\n{GREEN}Step 6 Complete!{RESET}")
 
-# ============================================================================
 # STEP 7: Test Model and Evaluate Performance
-# ============================================================================
-
 print(f"\n{GREEN}STEP 7: Test Model on Test Data{RESET}\n")
 
 # Make predictions on test data
@@ -289,10 +271,7 @@ plt.show()
 
 print(f"\n{GREEN}Step 7 Complete!{RESET}")
 
-# ============================================================================
 # STEP 8: Test with Custom Comments
-# ============================================================================
-
 print(f"\n{GREEN}STEP 8: Test Classifier with 6 Custom Comments{RESET}\n")
 
 # Define 6 new custom comments (4 non-spam, 2 spam)
