@@ -1,12 +1,13 @@
 # NLP Project Report: YouTube Spam Comment Classifier
 ## Katy Perry - Roar Video Comments
 
-**Team Members:** 
-- [Noor Ahmad]
-- [Josias Ndam Mefire]
-- [Semir Osman]
-- [Rojina Saberi]
-- [Umer Sikander]
+##Team Members: 
+- Noor Ahmad
+- Josias Ndam Mefire
+- Semir Osman
+- Rojina Saberi
+- Umer Sikander
+
 **Date:** December 3, 2025  
 **Course:** COMP237 - Introduction to AI
 
