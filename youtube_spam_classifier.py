@@ -3,7 +3,45 @@ NLP Project: YouTube Spam Comment Classifier
 Movie: Katy Perry - Roar
 Using Naive Bayes Classifier with Bag of Words Model
 
-Team Members: [Add your names here]
+# YouTube Spam Classifier - Project Report
+
+## Team Members
+- [Noor Ahmad]
+- [Josias Ndam Mefire]
+- [Semir Osman]
+- [Rojina Saberi]
+- [Umer Sikander]
+
+## Results Summary
+- **Dataset**: YouTube comments for Katy Perry - Roar
+- **Total Samples**: 350 (175 spam, 175 non-spam)
+- **Training Accuracy**: 99.24%
+- **Test Accuracy**: 90.91%
+- **Cross-Validation Mean Accuracy**: 90.45%
+
+## Key Findings
+1. The model successfully distinguishes spam vs non-spam comments
+2. Custom comments test: [4]/6 correctly 66.67% classified
+
+3.Confusion Matrix Analysis**: 
+   - **High precision for spam (97%)**: When the model predicts spam, it's usually correct
+   - **High recall for non-spam (98%)**: The model rarely mislabels genuine comments as spam
+   - **Main challenge**: Missing some sophisticated spam (7 false negatives)
+
+4. **Data Insights**:
+   - The dataset was perfectly balanced (175 spam, 175 non-spam)
+   - Vocabulary size: 1,738 unique words after text processing
+   - Matrix sparsity: 99.13%, indicating most words appear in few comments
+
+5. **Model Strengths**:
+   - Excellent at detecting obvious spam with URLs and promotional language
+   - Low false positive rate (only 1 genuine comment misclassified)
+   - Fast training and prediction suitable for real-time filtering
+
+6. **Areas for Improvement**:
+   - Handling typos and misspellings in spam comments
+   - Detecting more sophisticated spam without obvious URLs
+   - Improving recall for spam detection (currently 82.5%)
 Date: December 3, 2025
 """
 
